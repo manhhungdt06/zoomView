@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZoomTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgy-oj-4ZH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="gFN-4i-hxW"/>
+                                    <constraint firstAttribute="height" constant="523" id="wLv-JJ-yBw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HJf-oG-130"/>
+                                </connections>
+                            </scrollView>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7o1-Ok-o2i">
+                                <frame key="frameInset" minX="16" minY="557" width="343" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6JQ-d8-ad7"/>
+                                    <constraint firstAttribute="width" constant="339" id="gve-vq-OtE"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderZoom:" destination="BYZ-38-t0r" eventType="valueChanged" id="fuL-22-g5b"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7o1-Ok-o2i" firstAttribute="top" secondItem="zgy-oj-4ZH" secondAttribute="bottom" constant="14" id="22h-xq-5SQ"/>
+                            <constraint firstItem="zgy-oj-4ZH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2as-FF-uIa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7o1-Ok-o2i" secondAttribute="bottom" constant="80" id="4X1-e1-mbQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7o1-Ok-o2i" secondAttribute="trailing" constant="2" id="89g-5I-WTM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zgy-oj-4ZH" secondAttribute="bottom" constant="124" id="NMl-dV-ZBv"/>
+                            <constraint firstItem="zgy-oj-4ZH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="X9M-4b-ADu"/>
+                            <constraint firstItem="7o1-Ok-o2i" firstAttribute="top" secondItem="zgy-oj-4ZH" secondAttribute="bottom" constant="15" id="YfM-ww-CMu"/>
+                            <constraint firstItem="zgy-oj-4ZH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pdS-fQ-eHQ"/>
+                            <constraint firstItem="7o1-Ok-o2i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="yKS-ab-Ppr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ViewScroll" destination="zgy-oj-4ZH" id="hB6-Al-M02"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
