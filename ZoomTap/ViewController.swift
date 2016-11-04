@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        let imgView = UIImageView(image: UIImage(named: "fanartChaosKnight.jpg"))
+        let imgView = UIImageView(image: UIImage(named: "fanArt.png"))
         imgView.frame = CGRect(x: 0, y: 0, width: ViewScroll.frame.size.width, height: ViewScroll.frame.size.height)
         imgView.isUserInteractionEnabled = true
         imgView.isMultipleTouchEnabled = true
@@ -34,8 +34,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         photo = imgView
         ViewScroll.contentSize = CGSize(width: imgView.bounds.width, height: imgView.bounds.height)
-//        ViewScroll.minimumZoomScale = 0.5
-//        ViewScroll.maximumZoomScale = 2
+//        ViewScroll.contentOffset = CGPoint(x: -500, y: -50)
+//        ViewScroll.clipsToBounds = true
+//        ViewScroll.bounces = false
+//        ViewScroll.backgroundColor = UIColor.black
+        ViewScroll.minimumZoomScale = 0.5
+        ViewScroll.maximumZoomScale = 2
+        
         
         self.ViewScroll.addSubview(imgView)
     }

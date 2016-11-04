@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E28889681DCC779600C266E6 /* fanArt.png in Resources */ = {isa = PBXBuildFile; fileRef = E28889671DCC779600C266E6 /* fanArt.png */; };
 		E2D9176C1DCC42F5005842B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D9176B1DCC42F5005842B0 /* AppDelegate.swift */; };
 		E2D9176E1DCC42F5005842B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D9176D1DCC42F5005842B0 /* ViewController.swift */; };
 		E2D917711DCC42F5005842B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D9176F1DCC42F5005842B0 /* Main.storyboard */; };
 		E2D917731DCC42F5005842B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D917721DCC42F5005842B0 /* Assets.xcassets */; };
 		E2D917761DCC42F5005842B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D917741DCC42F5005842B0 /* LaunchScreen.storyboard */; };
-		E2D9177E1DCC4427005842B0 /* fanartChaosKnight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2D9177D1DCC4427005842B0 /* fanartChaosKnight.jpg */; };
-		E2D917851DCC4743005842B0 /* milkyway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2D917831DCC4743005842B0 /* milkyway.jpg */; };
-		E2D917861DCC4743005842B0 /* sun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2D917841DCC4743005842B0 /* sun.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E28889671DCC779600C266E6 /* fanArt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanArt.png; sourceTree = "<group>"; };
 		E2D917681DCC42F5005842B0 /* ZoomTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZoomTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D9176B1DCC42F5005842B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D9176D1DCC42F5005842B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,9 +24,6 @@
 		E2D917721DCC42F5005842B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D917751DCC42F5005842B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D917771DCC42F5005842B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2D9177D1DCC4427005842B0 /* fanartChaosKnight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fanartChaosKnight.jpg; sourceTree = "<group>"; };
-		E2D917831DCC4743005842B0 /* milkyway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = milkyway.jpg; sourceTree = "<group>"; };
-		E2D917841DCC4743005842B0 /* sun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +58,7 @@
 			children = (
 				E2D9176B1DCC42F5005842B0 /* AppDelegate.swift */,
 				E2D9176D1DCC42F5005842B0 /* ViewController.swift */,
-				E2D917831DCC4743005842B0 /* milkyway.jpg */,
-				E2D917841DCC4743005842B0 /* sun.jpg */,
-				E2D9177D1DCC4427005842B0 /* fanartChaosKnight.jpg */,
+				E28889671DCC779600C266E6 /* fanArt.png */,
 				E2D9176F1DCC42F5005842B0 /* Main.storyboard */,
 				E2D917721DCC42F5005842B0 /* Assets.xcassets */,
 				E2D917741DCC42F5005842B0 /* LaunchScreen.storyboard */,
@@ -132,12 +126,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D917861DCC4743005842B0 /* sun.jpg in Resources */,
 				E2D917761DCC42F5005842B0 /* LaunchScreen.storyboard in Resources */,
-				E2D917851DCC4743005842B0 /* milkyway.jpg in Resources */,
+				E28889681DCC779600C266E6 /* fanArt.png in Resources */,
 				E2D917731DCC42F5005842B0 /* Assets.xcassets in Resources */,
 				E2D917711DCC42F5005842B0 /* Main.storyboard in Resources */,
-				E2D9177E1DCC4427005842B0 /* fanartChaosKnight.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +301,7 @@
 				E2D9177C1DCC42F5005842B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
